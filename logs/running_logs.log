@@ -1,0 +1,136 @@
+[2024-06-11 00:41:30,694: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 00:41:30,701: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 00:41:30,707: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 00:41:30,708: INFO: common: created directory at: artifacts]
+[2024-06-11 00:41:30,709: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 00:41:31,932: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Server: GitHub.com
+Date: Mon, 10 Jun 2024 19:11:30 GMT
+Content-Type: text/html; charset=utf-8
+Vary: X-PJAX, X-PJAX-Container, Turbo-Visit, Turbo-Frame, Accept-Encoding, Accept, X-Requested-With
+ETag: W/"983aeab5f880f945e332b4d06f8dabad"
+Cache-Control: max-age=0, private, must-revalidate
+Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
+X-Frame-Options: deny
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Referrer-Policy: no-referrer-when-downgrade
+Content-Security-Policy: default-src 'none'; base-uri 'self'; child-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/; connect-src 'self' uploads.github.com www.githubstatus.com collector.github.com raw.githubusercontent.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com api.githubcopilot.com objects-origin.githubusercontent.com copilot-proxy.githubusercontent.com/v1/engines/github-completion/completions *.actions.githubusercontent.com wss://*.actions.githubusercontent.com productionresultssa0.blob.core.windows.net/ productionresultssa1.blob.core.windows.net/ productionresultssa2.blob.core.windows.net/ productionresultssa3.blob.core.windows.net/ productionresultssa4.blob.core.windows.net/ productionresultssa5.blob.core.windows.net/ productionresultssa6.blob.core.windows.net/ productionresultssa7.blob.core.windows.net/ productionresultssa8.blob.core.windows.net/ productionresultssa9.blob.core.windows.net/ productionresultssa10.blob.core.windows.net/ productionresultssa11.blob.core.windows.net/ productionresultssa12.blob.core.windows.net/ productionresultssa13.blob.core.windows.net/ productionresultssa14.blob.core.windows.net/ productionresultssa15.blob.core.windows.net/ productionresultssa16.blob.core.windows.net/ productionresultssa17.blob.core.windows.net/ productionresultssa18.blob.core.windows.net/ productionresultssa19.blob.core.windows.net/ github-production-repository-image-32fea6.s3.amazonaws.com github-production-release-asset-2e65be.s3.amazonaws.com insights.github.com wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com copilot-workspace.githubnext.com objects-origin.githubusercontent.com; frame-ancestors 'none'; frame-src viewscreen.githubusercontent.com notebooks.githubusercontent.com; img-src 'self' data: github.githubassets.com media.githubusercontent.com camo.githubusercontent.com identicons.github.com avatars.githubusercontent.com github-cloud.s3.amazonaws.com objects.githubusercontent.com secured-user-images.githubusercontent.com/ user-images.githubusercontent.com/ private-user-images.githubusercontent.com opengraph.githubassets.com github-production-user-asset-6210df.s3.amazonaws.com customer-stories-feed.github.com spotlights-feed.github.com objects-origin.githubusercontent.com *.githubusercontent.com; manifest-src 'self'; media-src github.com user-images.githubusercontent.com/ secured-user-images.githubusercontent.com/ private-user-images.githubusercontent.com github-production-user-asset-6210df.s3.amazonaws.com gist.github.com; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; upgrade-insecure-requests; worker-src github.com/assets-cdn/worker/ gist.github.com/assets-cdn/worker/
+Set-Cookie: _gh_sess=08Bb4shTF3qTXfMQLGdyv6jSEpJSFLDuNsSVXan7SlPunYAtC5uXBZ0nOVJ1f6BwaAS2Semon9lkwU8XIdTbPe7CpqkSEfxNoc%2FWaY078AlZ2zNF6ftzC6gHao77uMGSZ3YfJ00gKJKtJo3XfpEhbl%2BKEi2En%2FwP9ewgd8KCBYXiA3vc3YZGaeQn5PdS1ck5O2MCJ7tsZ%2BlhOGJSBfq%2FtKP6mjuw7JScWRQUBTkxiD4zzzby%2FhKg%2FR9WWgZVnmR0iRCTbZofCgwEggjCXDDGmA%3D%3D--qsZNk5Ar64fSgZy5--omAKmG9QCIX%2BC6riRvsnjg%3D%3D; Path=/; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: _octo=GH1.1.423827654.1718046690; Path=/; Domain=github.com; Expires=Tue, 10 Jun 2025 19:11:30 GMT; Secure; SameSite=Lax
+Set-Cookie: logged_in=no; Path=/; Domain=github.com; Expires=Tue, 10 Jun 2025 19:11:30 GMT; HttpOnly; Secure; SameSite=Lax
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-GitHub-Request-Id: 99FD:10E5A9:D067E:EBBD8:66674FE1
+connection: close
+
+]
+[2024-06-11 00:41:32,013: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\conponents\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-06-11 00:42:39,353: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 00:42:39,355: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 00:42:39,356: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 00:42:39,357: INFO: common: created directory at: artifacts]
+[2024-06-11 00:42:39,358: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 00:42:39,359: INFO: data_ingestion: File already exists of size: ~ 264 KB]
+[2024-06-11 00:42:39,359: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\conponents\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-06-11 00:43:53,644: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 00:43:53,651: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 00:43:53,652: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 00:43:53,653: INFO: common: created directory at: artifacts]
+[2024-06-11 00:43:53,653: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 00:43:53,653: INFO: data_ingestion: File already exists of size: ~ 264 KB]
+[2024-06-11 00:43:53,654: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\conponents\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-06-11 00:44:06,778: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 00:44:06,779: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 00:44:06,780: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 00:44:06,780: INFO: common: created directory at: artifacts]
+[2024-06-11 00:44:06,780: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 00:44:06,781: INFO: data_ingestion: File already exists of size: ~ 264 KB]
+[2024-06-11 00:44:06,781: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 8, in <module>
+    data_ingestion.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\conponents\data_ingestion.py", line 36, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1302, in __init__
+    self._RealGetContents()
+  File "C:\ProgramData\anaconda3\Lib\zipfile.py", line 1369, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2024-06-11 00:44:33,482: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 00:44:33,483: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 00:44:33,484: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 00:44:33,485: INFO: common: created directory at: artifacts]
+[2024-06-11 00:44:33,486: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 00:44:36,194: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 68B4:F0C41:65765:7E9E5:66675099
+Accept-Ranges: bytes
+Date: Mon, 10 Jun 2024 19:14:34 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21732-DEL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718046874.828609,VS0,VE715
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 96f6e60608ed990d78bc629eef26692ab0633571
+Expires: Mon, 10 Jun 2024 19:19:34 GMT
+Source-Age: 0
+
+]
+[2024-06-11 00:44:36,444: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
