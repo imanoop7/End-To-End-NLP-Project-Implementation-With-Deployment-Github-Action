@@ -764,3 +764,64 @@ Traceback (most recent call last):
     owner=self.remote.split(os.sep)[-2],
           ^^^^^^^^^^^^^^^^^
 AttributeError: 'NoneType' object has no attribute 'split'
+[2024-06-11 23:16:40,610: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 23:17:06,457: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 23:17:06,463: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 23:17:06,465: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 23:17:06,466: INFO: common: created directory at: artifacts]
+[2024-06-11 23:17:06,467: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 23:17:06,468: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-11 23:17:06,802: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 23:17:06,803: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 23:17:06,815: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 23:17:06,823: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 23:17:06,824: INFO: common: created directory at: artifacts]
+[2024-06-11 23:17:06,825: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 23:17:06,830: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 23:17:06,831: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-11 23:17:06,840: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 23:17:06,842: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 23:17:06,843: INFO: common: created directory at: artifacts]
+[2024-06-11 23:17:06,844: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-11 23:17:10,211: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\train\cache-ba20fc51455005bb.arrow]
+[2024-06-11 23:17:10,238: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\test\cache-9a7bbc0fd377bfb6.arrow]
+[2024-06-11 23:17:10,398: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\validation\cache-09e07b1835f4a5fa.arrow]
+[2024-06-11 23:17:10,608: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 23:17:10,609: INFO: main: *******************]
+[2024-06-11 23:17:10,609: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-06-11 23:17:10,615: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 23:17:10,620: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 23:17:10,621: INFO: common: created directory at: artifacts]
+[2024-06-11 23:17:10,622: INFO: common: created directory at: artifacts/model_trainer]
+[2024-06-11 23:18:05,160: ERROR: main: 'NoneType' object has no attribute 'split']
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 14, in main
+    model_trainer_config.train()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\components\model_trainer.py", line 39, in train
+    trainer.train()
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\transformers\trainer.py", line 1555, in train
+    return inner_training_loop(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\transformers\trainer.py", line 1789, in _inner_training_loop
+    self.control = self.callback_handler.on_train_begin(args, self.state, self.control)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\transformers\trainer_callback.py", line 363, in on_train_begin
+    return self.call_event("on_train_begin", args, state, control)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\transformers\trainer_callback.py", line 407, in call_event
+    result = getattr(callback, event)(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\transformers\integrations\integration_utils.py", line 1020, in on_train_begin
+    self.setup(args, state, model)
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\transformers\integrations\integration_utils.py", line 1091, in setup
+    owner=self.remote.split(os.sep)[-2],
+          ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'split'
