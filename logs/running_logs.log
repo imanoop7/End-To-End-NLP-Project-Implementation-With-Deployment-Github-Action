@@ -199,3 +199,79 @@ x==========x]
 [2024-06-11 10:11:03,916: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
 
 x==========x]
+[2024-06-11 10:21:33,510: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 10:21:35,690: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 10:21:35,695: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:21:35,696: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:21:35,697: INFO: common: created directory at: artifacts]
+[2024-06-11 10:21:35,697: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 10:21:35,698: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-11 10:21:35,840: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 10:21:35,840: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 10:21:35,842: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:21:35,843: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:21:35,844: INFO: common: created directory at: artifacts]
+[2024-06-11 10:21:35,844: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 10:21:35,846: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 10:21:35,846: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-11 10:21:35,851: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:21:35,852: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:21:35,852: INFO: common: created directory at: artifacts]
+[2024-06-11 10:21:35,856: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-11 10:21:42,731: ERROR: main: Protocol not known: artifacts/data_ingestion/samsum_dataset]
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 34, in <module>
+    data_transformation.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_03_data_transformation.py", line 14, in main
+    data_transformation.convert()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\components\data_transformation.py", line 30, in convert
+    dataset_samsum = load_from_disk(self.config.data_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\datasets\load.py", line 1892, in load_from_disk
+    return DatasetDict.load_from_disk(dataset_path, keep_in_memory=keep_in_memory, storage_options=storage_options)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\datasets\dataset_dict.py", line 1319, in load_from_disk
+    dataset_dict[k] = Dataset.load_from_disk(
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\ProgramData\anaconda3\Lib\site-packages\datasets\arrow_dataset.py", line 1627, in load_from_disk
+    fs_token_paths = fsspec.get_fs_token_paths(dataset_path, storage_options=storage_options)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\fsspec\core.py", line 648, in get_fs_token_paths
+    chain = _un_chain(urlpath0, storage_options or {})
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\fsspec\core.py", line 344, in _un_chain
+    cls = get_filesystem_class(protocol)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\fsspec\registry.py", line 239, in get_filesystem_class
+    raise ValueError(f"Protocol not known: {protocol}")
+ValueError: Protocol not known: artifacts/data_ingestion/samsum_dataset
+[2024-06-11 10:28:36,197: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 10:28:37,152: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 10:28:37,154: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:28:37,155: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:28:37,155: INFO: common: created directory at: artifacts]
+[2024-06-11 10:28:37,156: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 10:28:37,156: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-11 10:28:37,283: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 10:28:37,283: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 10:28:37,285: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:28:37,286: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:28:37,287: INFO: common: created directory at: artifacts]
+[2024-06-11 10:28:37,287: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 10:28:37,290: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 10:28:37,290: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-11 10:28:37,292: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:28:37,294: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:28:37,294: INFO: common: created directory at: artifacts]
+[2024-06-11 10:28:37,295: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-11 10:28:48,253: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
