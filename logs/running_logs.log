@@ -275,3 +275,431 @@ x==========x]
 [2024-06-11 10:28:48,253: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
 
 x==========x]
+[2024-06-11 22:49:35,991: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 22:50:30,201: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 22:53:48,029: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 22:54:01,986: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 22:54:02,004: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:54:02,014: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:54:02,015: INFO: common: created directory at: artifacts]
+[2024-06-11 22:54:02,016: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 22:54:02,018: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-11 22:54:02,215: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:54:02,216: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 22:54:02,218: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:54:02,220: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:54:02,221: INFO: common: created directory at: artifacts]
+[2024-06-11 22:54:02,221: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 22:54:02,225: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:54:02,228: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-11 22:54:02,234: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:54:02,235: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:54:02,236: INFO: common: created directory at: artifacts]
+[2024-06-11 22:54:02,236: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-11 22:54:04,636: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\train\cache-ba20fc51455005bb.arrow]
+[2024-06-11 22:54:05,375: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\validation\cache-618fbcead4c97214.arrow]
+[2024-06-11 22:54:05,560: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:54:05,561: INFO: main: *******************]
+[2024-06-11 22:54:05,563: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-06-11 22:54:05,569: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:54:05,572: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:54:05,573: INFO: common: created directory at: artifacts]
+[2024-06-11 22:54:05,574: ERROR: main: "'ConfigBox' object has no attribute 'model_trainer'"]
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 12, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\config\configuration.py", line 67, in get_model_trainer_config
+    config = self.config.model_trainer
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+[2024-06-11 22:56:43,869: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 22:56:53,255: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 22:56:53,260: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:56:53,261: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:56:53,262: INFO: common: created directory at: artifacts]
+[2024-06-11 22:56:53,263: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 22:56:53,263: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-11 22:56:53,445: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:56:53,446: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 22:56:53,449: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:56:53,451: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:56:53,453: INFO: common: created directory at: artifacts]
+[2024-06-11 22:56:53,454: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 22:56:53,494: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:56:53,495: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-11 22:56:53,503: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:56:53,507: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:56:53,508: INFO: common: created directory at: artifacts]
+[2024-06-11 22:56:53,510: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-11 22:56:56,051: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\train\cache-ba20fc51455005bb.arrow]
+[2024-06-11 22:56:56,125: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\test\cache-9a7bbc0fd377bfb6.arrow]
+[2024-06-11 22:56:57,242: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:56:57,243: INFO: main: *******************]
+[2024-06-11 22:56:57,243: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-06-11 22:56:57,249: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:56:57,253: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:56:57,255: INFO: common: created directory at: artifacts]
+[2024-06-11 22:56:57,256: ERROR: main: "'ConfigBox' object has no attribute 'model_trainer'"]
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 12, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\config\configuration.py", line 67, in get_model_trainer_config
+    config = self.config.model_trainer
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+[2024-06-11 22:58:00,479: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 22:58:07,756: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 22:58:07,758: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:58:07,760: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:58:07,761: INFO: common: created directory at: artifacts]
+[2024-06-11 22:58:07,761: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 22:58:07,762: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-11 22:58:07,890: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:58:07,891: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 22:58:07,894: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:58:07,896: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:58:07,897: INFO: common: created directory at: artifacts]
+[2024-06-11 22:58:07,898: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 22:58:07,902: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:58:07,903: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-11 22:58:07,911: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:58:07,916: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:58:07,917: INFO: common: created directory at: artifacts]
+[2024-06-11 22:58:07,917: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-11 22:58:09,517: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\train\cache-ba20fc51455005bb.arrow]
+[2024-06-11 22:58:09,533: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\test\cache-9a7bbc0fd377bfb6.arrow]
+[2024-06-11 22:58:09,559: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\validation\cache-09e07b1835f4a5fa.arrow]
+[2024-06-11 22:58:09,789: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 22:58:09,790: INFO: main: *******************]
+[2024-06-11 22:58:09,791: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-06-11 22:58:09,795: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 22:58:09,815: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 22:58:09,819: INFO: common: created directory at: artifacts]
+[2024-06-11 22:58:09,819: ERROR: main: "'ConfigBox' object has no attribute 'model_trainer'"]
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\config_box.py", line 28, in __getattr__
+    return super().__getattr__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 503, in __getitem__
+    return super().__getitem__(item)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 536, in __getattr__
+    value = self.__getitem__(item, _ignore_default=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 524, in __getitem__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 538, in __getattr__
+    value = object.__getattribute__(self, item)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 12, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\config\configuration.py", line 67, in get_model_trainer_config
+    config = self.config.model_trainer
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\config_box.py", line 30, in __getattr__
+    return super().__getattr__(item.lower())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Anoop Maurya\AppData\Roaming\Python\Python311\site-packages\box\box.py", line 552, in __getattr__
+    raise BoxKeyError(str(err)) from _exception_cause(err)
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+[2024-06-11 23:03:57,359: INFO: utils: NumExpr defaulting to 4 threads.]
+[2024-06-11 23:04:05,214: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 23:04:05,218: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 23:04:05,222: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 23:04:05,223: INFO: common: created directory at: artifacts]
+[2024-06-11 23:04:05,224: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 23:04:05,224: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-11 23:04:05,357: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 23:04:05,357: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 23:04:05,360: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 23:04:05,362: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 23:04:05,362: INFO: common: created directory at: artifacts]
+[2024-06-11 23:04:05,363: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 23:04:05,365: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 23:04:05,365: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-06-11 23:04:05,367: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 23:04:05,369: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 23:04:05,370: INFO: common: created directory at: artifacts]
+[2024-06-11 23:04:05,370: INFO: common: created directory at: artifacts/data_transformation]
+[2024-06-11 23:04:07,369: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\train\cache-ba20fc51455005bb.arrow]
+[2024-06-11 23:04:07,398: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\test\cache-9a7bbc0fd377bfb6.arrow]
+[2024-06-11 23:04:07,431: WARNING: arrow_dataset: Loading cached processed dataset at C:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\artifacts\data_ingestion\samsum_dataset\validation\cache-09e07b1835f4a5fa.arrow]
+[2024-06-11 23:04:07,603: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-06-11 23:04:07,604: INFO: main: *******************]
+[2024-06-11 23:04:07,605: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-06-11 23:04:07,608: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 23:04:07,612: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 23:04:07,613: INFO: common: created directory at: artifacts]
+[2024-06-11 23:04:07,614: ERROR: main: "'ConfigBox' object has no attribute 'model_trainer'"]
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\config_box.py", line 29, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 592, in box.box.Box.__getitem__
+KeyError: 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 631, in box.box.Box.__getattr__
+  File "box\\box.py", line 619, in box.box.Box.__getitem__
+box.exceptions.BoxKeyError: "'model_trainer'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "box\\box.py", line 633, in box.box.Box.__getattr__
+AttributeError: 'ConfigBox' object has no attribute 'model_trainer'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 49, in <module>
+    model_trainer.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_04_model_trainer.py", line 12, in main
+    model_trainer_config = config.get_model_trainer_config()
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\config\configuration.py", line 67, in get_model_trainer_config
+    config = self.config.model_trainer
+             ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "box\\config_box.py", line 31, in box.config_box.ConfigBox.__getattr__
+  File "box\\box.py", line 647, in box.box.Box.__getattr__
+box.exceptions.BoxKeyError: "'ConfigBox' object has no attribute 'model_trainer'"
