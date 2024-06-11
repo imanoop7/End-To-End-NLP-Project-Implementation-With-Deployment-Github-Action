@@ -1,2 +1,3 @@
 artifacts/*
 .env
+src/textSummarizer/pipeline/__pycache__/stage_03_data_transformation.cpython-311.pyc
