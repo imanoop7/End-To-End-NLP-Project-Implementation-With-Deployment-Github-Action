@@ -134,3 +134,68 @@ Source-Age: 0
 [2024-06-11 00:44:36,444: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-06-11 10:10:29,234: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 10:10:29,246: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:10:29,247: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:10:29,248: INFO: common: created directory at: artifacts]
+[2024-06-11 10:10:29,248: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 10:10:34,071: INFO: data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 1D31:13D506:2222C:35CF2:6667D53D
+Accept-Ranges: bytes
+Date: Tue, 11 Jun 2024 04:40:30 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21731-DEL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1718080830.882647,VS0,VE727
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: 9ccf5e8375170395ede23cb26bc5e13e3839cbd8
+Expires: Tue, 11 Jun 2024 04:45:30 GMT
+Source-Age: 0
+
+]
+[2024-06-11 10:10:34,280: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 10:10:34,281: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 10:10:34,283: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:10:34,284: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:10:34,285: INFO: common: created directory at: artifacts]
+[2024-06-11 10:10:34,285: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 10:10:34,286: ERROR: main: name 'DataValiadtion' is not defined]
+Traceback (most recent call last):
+  File "c:\Users\Anoop Maurya\Documents\GitHub\End-To-End-NLP-Project-Implementation-With-Deployment-Github-Action\main.py", line 22, in <module>
+    data_validation.main()
+  File "c:\users\anoop maurya\documents\github\end-to-end-nlp-project-implementation-with-deployment-github-action\src\textSummarizer\pipeline\stage_02_data_validation.py", line 13, in main
+    data_validation = DataValiadtion(config=data_validation_config)
+                      ^^^^^^^^^^^^^^
+NameError: name 'DataValiadtion' is not defined
+[2024-06-11 10:11:03,752: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-06-11 10:11:03,754: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:11:03,755: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:11:03,755: INFO: common: created directory at: artifacts]
+[2024-06-11 10:11:03,756: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-06-11 10:11:03,756: INFO: data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-06-11 10:11:03,908: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-06-11 10:11:03,909: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-06-11 10:11:03,912: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-06-11 10:11:03,913: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-06-11 10:11:03,913: INFO: common: created directory at: artifacts]
+[2024-06-11 10:11:03,913: INFO: common: created directory at: artifacts/data_validation]
+[2024-06-11 10:11:03,916: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
