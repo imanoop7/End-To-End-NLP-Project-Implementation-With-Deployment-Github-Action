@@ -1,2 +1,6 @@
 artifacts/*
 .env
+pipline/__pycache__
+constant/__pycache__
+config/__pycache__
+components/__pycache__
